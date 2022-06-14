@@ -1,0 +1,62 @@
+.welcome-header {
+  margin: 90px 0px;
+  text-align: center;
+  display: flex; /*하위 항목들을 모두 세로로 배열하기 위해 묶기*/
+  flex-direction: column; /*주축 배열 : 세로*/
+  align-items: center; /*주축이 세로이므로 교차축 가로 center로 배열 정리*/
+}
+.welcome-header__title {
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.welcome-header__text {
+  width: 60%; /*화면 가로의 50%만 차지하는 글 너비*/
+  opacity: 0.7;
+}
+
+#login-form {
+  display: flex; /*로그인 form 위치 세로로 배열*/
+  flex-direction: column;
+  margin: 0px 30px;
+}
+
+#login-form input {
+  /*BEM 방식으로 id 안 쓰면 : .login-form__input*/
+  /*login-form 안에 있는 input*/
+  border: none; /*못생긴 테두리는 없애고*/
+  padding: 15px 0px;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+#login-form input:not([type="submit"]) {
+  /*login-form 중에서 submit 버튼이 아닌 경우에만 클릭시 노란색 변경 적용(:focus)*/
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  transition: border-color 0.3s ease-in-out;
+}
+
+#login-form input::placeholder {
+  /*psudeo elements*/
+  /*로그인폼 placeholder 디자인*/
+  color: rgba(0, 0, 0, 0.4);
+}
+
+#login-form input:focus {
+  border-color: var(--yellow);
+}
+
+#login-form input[type="submit"] {
+  background-color: var(--yellow);
+  cursor: pointer; /*포인터 모양*/
+  padding: 20px 0px;
+  border-radius: 5px;
+}
+
+#login-form a {
+  /*BEM 방식으로 id 안 쓰면 : .login-form__a*/
+  text-align: center;
+  text-decoration: none;
+  color: inherit; /*부모요소와 동일한*/
+  font-size: 13px;
+}

@@ -1,0 +1,30 @@
+.status-bar {
+  position: fixed;
+  z-index: 2; /*맨 위에 상단 고정하고 스크롤 해도 글씨가 보이도록*/
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex; /*상태바의 내용을 같은 줄에 두기 위해서*/
+  justify-content: center; /*flex 축을 따라 떨어뜨리기 위해*/
+  padding: 5px 3px;
+}
+.status-bar__column {
+  width: 33%; /*각 내부요소들이 왼쪽으로 정렬됨*/
+}
+.status-bar__column:first-child span {
+  margin-right: 5px; /*와이파이 아이콘을 오른쪽으로 조금 옮기기 위해*/
+}
+.status-bar__column:nth-child(2) {
+  display: flex;
+  justify-content: center; /*가운데 요소 왼쪽 → 중앙 배치*/
+}
+.status-bar__column:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.status-bar__column .fa-battery-full {
+  /*띄어쓰기 주의! 붙여쓰면 */
+  margin: 0px 5px;
+}

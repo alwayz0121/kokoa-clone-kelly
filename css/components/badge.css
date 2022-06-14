@@ -1,0 +1,21 @@
+.badge {
+  background-color: tomato; /*메시지 알림 박스*/
+  width: 24px;
+  height: 24px;
+  border-radius: 12px; /*동그랗게 만들고 싶다면 가로의 절반크기*/
+  display: flex; /*메시지 숫자 정렬 가운데로*/
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+}
+
+.newnotice {
+  background-color: tomato; /*메시지 알림 박스*/
+  width: 7px;
+  height: 7px;
+  border-radius: 3.5px; /*동그랗게 만들고 싶다면 가로의 절반크기*/
+  position: absolute; /*메시지 알림 박스 위치 조정*/
+  left: 20px;
+  bottom: 17px;
+}

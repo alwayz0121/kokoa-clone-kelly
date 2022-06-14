@@ -1,0 +1,33 @@
+/*CSS는 읽는 순서가 중요하기 때문에, font, 변수 지정을 상단에 올려줘야 다른 css 파일에서도 적용 가능*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+@import "reset.css";
+@import "variables.css";
+
+/* Components (항목) */
+@import "components/status-bar.css"; /*모든 페이지에 상태바가 있으므로 다로 css 파일로 저장*/
+@import "components/nav-bar.css";
+@import "components/screen-header.css";
+@import "components/user-component.css";
+@import "components/badge.css";
+@import "components/icon-row.css";
+@import "components/alt-screen-header.css";
+@import "components/no-mobile.css";
+
+/* Screens */
+@import "screens/login.css";
+@import "screens/friends.css";
+@import "screens/find.css";
+@import "screens/more.css";
+@import "screens/settings.css";
+@import "screens/chat.css";
+
+body {
+  color: #2e363e;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 70px; /*nav를 맨 하단에 고정해서 스크롤 해도 보이도록*/
+}
+
+.main-screen {
+  padding: 0px var(--horizontal-space);
+}

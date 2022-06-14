@@ -1,0 +1,8 @@
+:root {
+  /*우리 파일에서 --yellow를 아래의 색상으로 지정*/
+  --yellow: #fae100;
+  --brown: #2b0e0e;
+  --pink: #ffa5dc;
+  --horizontal-space: 20px; /*맨 바깥 padding이 일정한 간격이므로 변수 선언*/
+  --main-border: 1px solid rgba(0, 0, 0, 0.2);
+}
