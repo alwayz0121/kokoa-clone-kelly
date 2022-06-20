@@ -47,3 +47,20 @@
   margin-bottom: 10px;
   display: block;
 }
+
+.emoticons-left,
+.emoticons-right {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  padding: 0 0px 20px 60px;
+}
+
+.emoticons-right {
+  justify-content: flex-end;
+}
+
+.emoticons-left img,
+.emoticons-right img {
+  width: 250px;
+}
