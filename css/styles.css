@@ -26,6 +26,7 @@ body {
   color: #2e363e;
   font-family: "Open Sans", sans-serif;
   margin-bottom: 70px; /*nav를 맨 하단에 고정해서 스크롤 해도 보이도록*/
+  transition: all 0.5s;
 }
 
 .main-screen {
